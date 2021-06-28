@@ -1,0 +1,80 @@
+.site-header {
+    padding-top: 75px;
+}
+.site-header__container {
+    display: flex;
+}
+.navbar__logo {
+    margin-right: 80px;
+}
+.navbar__logo-img {
+    display: block;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.navbar__list {
+    display: flex;
+    @include list-unstyled;
+
+}
+.navbar__item:not(:last-child) {
+    margin-right: 40px;
+}
+.navbar__item-link, .navbar__link {
+    color: $color-white;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.navbar__item-link:hover{
+    color: $color-light-coral;
+}
+.navbar__link {
+    margin-left: auto;
+    padding: 10px 33px;
+    border-radius: 50px;
+    border: 2px solid white;
+    white-space: nowrap;
+
+    &:hover{
+        background-color: $color-white;
+        color: $color-deep-jungle-green;
+    }
+}
+
+.burger{
+    display: none;
+    border: none;
+    background-color: unset;
+    width: 20px;
+    height: 17px;
+    background-image: url("../../imges/gamburger-menu.svg");
+}
+
+@include breakpoint-down(800px){
+    .navbar__logo {
+        margin-right: 48px;
+    }
+}
+
+@include breakpoint-down(590px){
+
+    .site-header__navbar{
+        justify-content: space-between;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .navbar__list{
+        display: none;
+    }
+
+    .navbar__link{
+        display: none;
+    }
+}
