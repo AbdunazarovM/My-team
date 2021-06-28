@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sass</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="page__body">
+
+  <div class="container" style="display: none; columns: 3; column-gap: 40px; text-align: justify;">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, labore laborum, tempora repellat autem nam vel dolore dolor, explicabo ipsam porro! Totam, vel. Ab ipsam culpa iusto tempora saepe, ex, aliquid architecto debitis dolore doloremque aspernatur maxime vitae perferendis harum? Unde expedita voluptatibus delectus libero veniam deleniti, aspernatur suscipit pariatur consequuntur velit qui fuga eum ut totam cumque illo harum magni quam. Deleniti consequatur repudiandae in expedita tenetur, facere quibusdam delectus enim modi illum, facilis esse officia cupiditate quas minima fugiat commodi maiores iure. Id animi harum, assumenda, natus aperiam nulla ad ipsam recusandae, ipsa nesciunt libero quibusdam consequuntur eius reprehenderit aspernatur alias. Tempore velit voluptatibus, quos fuga id modi exercitationem ad harum nisi accusantium. Aspernatur, est quidem odit quam, ipsam earum quia ipsum maiores tempore rerum dolor expedita nobis? Nulla perferendis doloremque inventore cupiditate assumenda et, eligendi blanditiis laborum voluptates necessitatibus? Quod aliquid tenetur dolores quia neque minima rerum eveniet ut excepturi, natus perferendis, perspiciatis saepe nisi quae a, libero distinctio nihil quisquam aliquam reprehenderit mollitia? Aut non eligendi magni magnam! Nihil assumenda minus fugiat! Amet facilis cum ab quasi iste adipisci sit mollitia voluptate. Ipsa praesentium, omnis saepe minima iusto nihil ullam beatae corrupti voluptatem molestias explicabo? Quaerat, facilis repellat rerum aut et nostrum veritatis hic voluptates aliquid expedita voluptate quo ratione est exercitationem nesciunt assumenda illum corrupti sunt repudiandae. Eius dolor sapiente, modi amet fugit delectus. Magnam debitis at nemo harum quasi temporibus cupiditate quia aspernatur pariatur, ullam repellat. Molestias ipsa illum necessitatibus earum officia aut quae voluptas sed odit repudiandae. Ratione debitis quis laudantium veniam quos qui fuga necessitatibus? Deleniti corporis fugiat debitis et saepe autem nostrum facere earum? Laborum sequi architecto aut reiciendis illo eveniet, minus nobis ipsum mollitia modi beatae ratione sed quam! Eaque nihil nam, molestiae nulla provident ad incidunt harum reiciendis cum!
+  </div>
+
+  <main class="page__main-content">
+
+    <section class="features">
+      <div class="container">
+        <header class="features__header">
+          <h2 class="features__heading">Features</h2>
+          <p class="features__info">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+        </header>
+
+        <ul class="features__tabs tabs-features">
+          <li class="tabs-features__item tabs-features__item--active">
+            <a class="tabs-features__link" href="#description">Description</a>
+          </li>
+          <li class="tabs-features__item">
+            <a class="tabs-features__link" href="#reviews">Reviews</a>
+          </li>
+          <li class="tabs-features__item">
+            <a class="tabs-features__link" href="#questions">Questions</a>
+          </li>
+        </ul>
+
+        <div class="features__panels">
+          <section class="features__panel features__panel--active panel" id="description">
+            <h3 class="panel__heading">Description</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consectetur quidem, non mollitia voluptatem ad?</p>
+          </section>
+          <section class="features__panel panel" id="reviews">
+            <h3 class="panel__heading">Reviews</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consectetur quidem, non mollitia voluptatem ad?</p>
+          </section>
+          <section class="features__panel panel" id="questions">
+            <h3 class="panel__heading">Questions</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consectetur quidem, non mollitia voluptatem ad?</p>
+          </section>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="container">
+      <form class="fizzbuzz-form" action="https://echo.htmlacademy.ru" method="POST">
+        <input class="fizzbuzz-form__input" type="number" name="number" placeholder="Enter number" aria-label="Number" required>
+        <output class="fizzbuzz-form__result"></output>
+        <button class="fizzbuzz-form__submit" type="submit">Check</button>
+      </form>
+    </div>
+
+    <section class="reviews">
+      <div class="container">
+        <h2 class="reviews__heading">Delivering real results for top companies. Some of our <span class="reviews__heading-accent">success stories.</span></h2>
+
+        <ul class="reviews__list">
+          <li class="reviews__item review">
+            <blockquote class="review__text">“The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.”</blockquote>
+            <p class="review__author">Kady Baker</p>
+            <p class="review__author-position">Product Manager at Bookmark</p>
+            <img class="review__author-image" src="https://picsum.photos/62?random=1" alt="Rasm" width="62" height="62">
+          </li>
+          <li class="reviews__item review">
+            <blockquote class="review__text">“The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.”</blockquote>
+            <p class="review__author">Kady Baker</p>
+            <p class="review__author-position">Product Manager at Bookmark</p>
+            <img class="review__author-image" src="https://picsum.photos/62?random=2" alt="Rasm" width="62" height="62">
+          </li>
+          <li class="reviews__item review">
+            <blockquote class="review__text">“The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.”</blockquote>
+            <p class="review__author">Kady Baker</p>
+            <p class="review__author-position">Product Manager at Bookmark</p>
+            <img class="review__author-image" src="https://picsum.photos/62?random=3" alt="Rasm" width="62" height="62">
+          </li>
+          <li class="reviews__item review">
+            <blockquote class="review__text">“The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.”</blockquote>
+            <p class="review__author">Kady Baker</p>
+            <p class="review__author-position">Product Manager at Bookmark</p>
+            <img class="review__author-image" src="https://picsum.photos/62?random=4" alt="Rasm" width="62" height="62">
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>
