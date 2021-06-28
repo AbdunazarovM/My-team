@@ -587,6 +587,7 @@ img {
 
 .site-header {
   padding-top: 75px;
+  padding-bottom: 90px;
 }
 
 .site-header__container {
@@ -639,7 +640,7 @@ img {
 
 .navbar__link {
   margin-left: auto;
-  padding: 10px 33px;
+  padding: 10px 30px;
   border-radius: 50px;
   border: 2px solid white;
   white-space: nowrap;
@@ -679,6 +680,93 @@ img {
   }
   .navbar__link {
     display: none;
+  }
+}
+
+.site-foter__top {
+  background-color: #f67e7e;
+  background-image: url("../../imges/footer-top-bg.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 55%) calc(50% + 80px);
+}
+
+.site-footer__top-container {
+  max-width: 980px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 76px 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.site-footer__top-title {
+  margin: 0;
+  margin-right: 40px;
+  font-size: 48px;
+  line-height: 1;
+  color: #012F34;
+}
+
+.site-footer__top-link {
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 10px 30px;
+  border: 2px solid #012f34;
+  border-radius: 50px;
+  color: #012F34;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.site-footer__top-link:hover {
+  background-color: #012F34;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1170px) {
+  .site-foter__top {
+    background-position: calc(50% - 55%) calc(50% + 100px);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .site-footer__top-title {
+    font-size: 42px;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .site-footer__top-title {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 660px) {
+  .site-foter__top {
+    background-position: calc(50% - 55%) calc(50% + 120px);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .site-footer__top-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 86px;
+  }
+  .site-foter__top {
+    background-position: calc(50% - 50%) calc(50% + 145px);
+  }
+  .site-footer__top-title {
+    margin-right: 0;
+    margin-bottom: 24px;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=main.css.map */

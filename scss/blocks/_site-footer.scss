@@ -1,0 +1,78 @@
+.site-footer {
+}
+.site-foter__top {
+    background-color: $color-light-coral;
+    background-image: url("../../imges/footer-top-bg.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% - 55%) calc(50% + 80px);
+}
+.site-footer__top-container {
+    max-width: 980px;
+    display: flex;
+    padding: 76px 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+.site-footer__top-title {
+    margin: 0;
+    margin-right: 40px;
+    font-size: 48px;
+    line-height: 1;
+    color: $color-sacramento-state-green;
+}
+.site-footer__top-link {
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 10px 30px;
+    border: 2px solid #012f34;
+    border-radius: 50px;
+    color: $color-sacramento-state-green;
+    text-decoration: none;
+    white-space: nowrap;
+
+    &:hover{
+        background-color: $color-sacramento-state-green;
+        color: $color-white;
+    }
+}
+
+@include breakpoint-down(1170px){
+    .site-foter__top {
+        background-position: calc(50% - 55%) calc(50% + 100px);
+    }
+}
+
+@include breakpoint-down(900px){
+    .site-footer__top-title{
+        font-size: 42px;
+    }
+}
+
+@include breakpoint-down(790px){
+    .site-footer__top-title{
+        font-size: 32px;
+    }
+}
+
+@include breakpoint-between(551px, 660px){
+    .site-foter__top {
+        background-position: calc(50% - 55%) calc(50% + 120px);
+    }
+}
+
+@include breakpoint-down(550px){
+    .site-footer__top-container{
+        flex-direction: column;
+        padding-bottom: 86px;
+    }
+
+    .site-foter__top {
+        background-position: calc(50% - 50%) calc(50% + 145px);
+    }
+
+    .site-footer__top-title{
+        margin-right: 0;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+}
