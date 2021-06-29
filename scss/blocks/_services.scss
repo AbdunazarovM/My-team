@@ -1,0 +1,197 @@
+.services {
+    padding: 140px 0;
+    background-color: $color-dark-green;
+    background-image: url("../../imges/main-disk-bg.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 680px) bottom;
+}
+
+.services__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services__title {
+    max-width: 445px;
+    @include flex-column;
+    margin: 0;
+    margin-top: -58px;
+    font-size: 48px;
+    line-height: 1;
+
+    &::before{
+        content: "";
+        width: 50px;
+        height: 4px;
+        background-color: $color-light-coral;
+        margin-bottom: 54px;
+    }
+}
+
+.services__list {
+    max-width: 445px;
+    @include list-unstyled;
+    margin-top: -32px;
+
+}
+.services__item {
+    margin-top: 32px;
+    position: relative;
+
+    &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 72px;
+        height: 72px;
+        top: 0;
+        left: -100px;
+        background-repeat: no-repeat;
+    }
+}
+
+.individuals::before{
+    background-image: url("../../imges/experienced-bg.png");
+}
+.implement::before{
+    background-image: url("/imges/implement-bg.png");
+}
+
+.productivity::before{
+    background-image: url("../../imges/enhanced-bg.png");
+}
+
+
+.services__item-title {
+    margin: 0;
+    margin-bottom: 16px;
+    color: $color-light-coral;
+    font-size: 18px;
+    line-height: 28px;
+}
+.services__item-text {
+    margin: 0;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+
+@include breakpoint-down(1250px){
+    .services{
+        background-position: calc(50% + 62%) bottom;
+    }
+}
+
+@include breakpoint-down(1060px){
+    .services{
+        background-position: calc(50% + 65%) bottom;
+    }
+    .services__list{
+        max-width: 390px;
+    }
+}
+
+@include breakpoint-down(1000px){
+    .services__title{
+        max-width: 400px;
+        font-size: 42px;
+    }
+}
+
+@include breakpoint-down(960px){
+    .services__list{
+        max-width: 320px;
+    }
+
+    .services__title{
+        max-width: 360px;
+        font-size: 36px;
+    }
+}
+
+@include breakpoint-down(850px){
+    .services{
+        padding: 100px 0;
+        background-position: calc(50% + 66%) top;
+    }
+
+    .services__container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .services__title{
+        max-width: 445px;
+        font-size: 32px;
+        margin-bottom: 64px;
+    }
+
+    .services__list{
+        max-width: 480px;
+        margin-left: 100px;
+    }
+}
+
+@include breakpoint-down(630px){
+    .services__title{
+        max-width: 380px;
+    }
+
+    .services__list{
+        max-width: 400px;
+    }
+}
+
+@include breakpoint-down(550px){
+    .services__title{
+        max-width: 330px;
+    }
+
+    .services__list{
+        max-width: 350px;
+    }
+}
+
+@include breakpoint-down(500px){
+    .services{
+        padding-top: 125px;
+        padding-bottom: 64px;
+    }
+
+    .services__container {
+        align-items: center;
+    }
+
+    .services__title{
+        max-width: 240px;
+        align-self: start;
+        font-size: 32px;
+        margin-bottom: 64px;
+    }
+
+    .services__list{
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .services__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services__item::before{
+        position: unset;
+        margin-bottom: 16px;
+    }
+}
+
+@include breakpoint-down(400px){
+    .services{
+        background-position: calc(50% + 150px) top;
+    }
+}
