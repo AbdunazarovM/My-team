@@ -770,14 +770,21 @@ img {
   }
 }
 
+.hero {
+  padding-bottom: 250px;
+  background-image: url("../../imges/bg-header-left.png"), url("../../imges/bg-for-header-right.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 715px) calc(50% - 125px), calc(50% + 350px) calc(50% + 90%);
+}
+
 .hero__container {
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hero__title {
@@ -785,7 +792,7 @@ img {
   margin: 0;
   margin-right: 30px;
   font-size: 100px;
-  line-height: 1;
+  line-height: 100px;
 }
 
 .hero__title span {
@@ -812,5 +819,79 @@ img {
   height: 4px;
   background-color: #79c8c7;
   margin-bottom: 79px;
+}
+
+@media only screen and (max-width: 1050px) {
+  .hero__title {
+    font-size: 90px;
+    line-height: 90px;
+  }
+  .hero__text::before {
+    margin-bottom: 60px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .hero__title {
+    font-size: 70px;
+    line-height: 70px;
+  }
+  .hero__text::before {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .hero {
+    background-position: calc(50% - 715px) calc(50% - 125px), center calc(50% + 90%);
+  }
+  .hero__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero__title {
+    max-width: 457px;
+    margin-bottom: 24px;
+    margin-right: 0;
+    text-align: center;
+    font-size: 64px;
+    line-height: 56px;
+  }
+  .hero__text {
+    max-width: 460px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 28px;
+  }
+  .hero__text::before {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .hero {
+    padding-bottom: 180px;
+  }
+  .hero__title {
+    max-width: 250px;
+    font-size: 40px;
+    line-height: 1;
+  }
+  .hero__text {
+    max-width: 300px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .hero__title {
+    max-width: 200px;
+    font-size: 40px;
+    line-height: 1;
+  }
+  .hero__text {
+    max-width: 250px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

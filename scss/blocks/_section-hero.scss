@@ -1,14 +1,24 @@
+.hero{
+    padding-bottom: 250px;
+    background-image: url("../../imges/bg-header-left.png"),
+                    url("../../imges/bg-for-header-right.png");
+    
+    background-repeat: no-repeat;
+    background-position: calc(50% - 715px) calc(50% - 125px),
+                        calc(50% + 350px) calc(50% + 90%);
+
+}
 .hero__container {
     color: $color-white;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
 }
 .hero__title {
     width: 635px;
     margin: 0;
     margin-right: 30px;
     font-size: 100px;
-    line-height: 1;
+    line-height: 100px;
 
     span{
         color: $color-light-coral;
@@ -30,3 +40,85 @@
         margin-bottom: 79px;
     }
 }
+
+@include breakpoint-down(1050px){
+    .hero__title{
+        font-size: 90px;
+        line-height: 90px;
+    }
+
+    .hero__text::before{
+        margin-bottom: 60px;
+    }
+}
+
+@include breakpoint-down(960px){
+    .hero__title{
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+    .hero__text::before{
+        margin-bottom: 30px;
+    }
+}
+
+@include breakpoint-down(800px){
+    .hero{
+        background-position: calc(50% - 715px) calc(50% - 125px),
+                            center calc(50% + 90%);
+    }
+
+    .hero__container{
+        flex-direction: column;
+    }
+
+    .hero__title{
+        max-width: 457px;
+        margin-bottom: 24px;
+        margin-right: 0;
+        text-align: center;
+        font-size: 64px;
+        line-height: 56px;
+    }
+
+    .hero__text{
+        max-width: 460px;
+        text-align: center;
+        font-size: 15px;
+        line-height: 28px;
+    }
+
+    .hero__text::before{
+        display: none;
+    }
+}
+
+@include breakpoint-down(480px){
+    .hero{
+        padding-bottom: 180px;
+    }
+
+    .hero__title{
+        max-width: 250px;
+        font-size: 40px;
+        line-height: 1;
+    }
+
+    .hero__text{
+        max-width: 300px;
+    }
+}
+
+@include breakpoint-down(360px){
+    .hero__title{
+        max-width: 200px;
+        font-size: 40px;
+        line-height: 1;
+    }
+
+    .hero__text{
+        max-width: 250px;
+    }
+}
+
