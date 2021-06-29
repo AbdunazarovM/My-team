@@ -1,7 +1,11 @@
 .review {
+  padding-top: 21px;
   @include flex-column;
   align-items: center;
   text-align: center;
+  background-image: url("../../imges/double-quotes-bg.png");
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 
 .review__text {
@@ -28,10 +32,6 @@
 .review__author-image {
   border-radius: 50%;
   transition: transform 0.4s ease;
-
-  // &:hover {
-  //   transform: rotate(360deg);
-  // }
 }
 
 .review:hover .review__author-image {
