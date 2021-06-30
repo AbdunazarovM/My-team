@@ -1,0 +1,31 @@
+.about-hero{
+    padding: 120px 0;
+    background-image: url("../../imges/about-page-hero-bg.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 675px) bottom;
+}
+.about-hero__container {
+    display: flex;
+    justify-content: space-between;
+}
+.about-hero__title {
+    margin: 0;
+    font-size: 64px;
+    line-height: 100px;
+}
+.about-hero__text {
+    display: flex;
+    flex-direction: column;
+    max-width: 730px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 28px;
+
+    &::before{
+        content: "";
+        width: 50px;
+        height: 4px;
+        background-color:$color-light-coral;
+        margin-bottom: 40px;
+    }
+}
