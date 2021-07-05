@@ -1,14 +1,24 @@
 .directors {
+    padding: 140px 0;
+    background-color: $color-deep-jungle-green;
 }
 .directors__container {
-}
-.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .directors__title {
+    font-size: 48px;
+    line-height: 1;
 }
 .directors__list {
+    display: flex;
+    flex-wrap: wrap;
+    @include list-unstyled;
+    margin-left: -30px;
+    margin-bottom: -76px;
 }
 .directors__item {
-}
-.director {
+    margin-left: 30px;
+    margin-bottom: 76px;
 }

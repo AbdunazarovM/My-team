@@ -1,20 +1,66 @@
-.directors__item {
-}
 .director {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 24px;
+    padding-bottom: 56px;
+    background-color: $color-sacramento-state-green;
+    position: relative;
 }
 .director__img {
+    margin-bottom: 16px;
 }
 .director__name {
+    margin: 0;
+    color: $color-rapture-blue;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
 }
 .director__info {
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+    margin: 0;
 }
-.director__bnt {
+.director__btn {
+    width: 56px;
+    height: 56px;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -28px;
+    background-color: $color-light-coral;
+    background-image: url("../../imges/icon-plus.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.director__web{
+    margin-bottom: 8px;
+}
+.director__text{
+    max-width: 254px;
+    margin: 0;
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
 }
 .director__accounts {
+    margin-left: -16px;
 }
 .director__account {
+    margin-left: 16px;
 }
-.director-twitter {
-}
-.director-linkedin {
+.director_plus-btn{
+    left: 44%;
+    background-color: $color-rapture-blue;
+    transform: translateX(-50%);
+    transform: rotate(45deg);
 }

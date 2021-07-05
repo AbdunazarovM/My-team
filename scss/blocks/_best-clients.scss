@@ -1,0 +1,34 @@
+.best-clients {
+    padding: 140px 0;
+    background-color: $color-sacramento-state-green;
+    background-image: url("../../imges/about-page-main-footer-bg.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.best-clients__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.best-clients__title {
+    margin: 0;
+    margin-bottom: 64px;    
+    font-size: 48px;
+    line-height: 1;
+}
+.best-clients__list {
+    @include list-unstyled;
+    display: flex;
+    align-items: flex-start;
+    margin-left: -80px;
+}
+.best-clients__item {
+    margin-left: 80px;
+}
+.best-clients__company {
+    display: block;
+
+    &:hover{
+        filter: grayscale(50%);
+    }
+}
