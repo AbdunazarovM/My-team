@@ -1,6 +1,13 @@
 .directors {
     padding: 140px 0;
     background-color: $color-deep-jungle-green;
+    background-image: url("../../imges/main-bottom-right-bg.png"),
+                        url("../../imges/square-bg.png");
+
+    background-repeat: no-repeat;
+    
+    background-position: calc(50% - 680px) top,
+                        right bottom;       
 }
 .directors__container {
     display: flex;

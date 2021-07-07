@@ -1,0 +1,34 @@
+.form__input, .form__massage {
+    width: 100%;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    padding-left: 14px;
+    display: block;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: $color-white;
+    outline: none;
+
+    &:active::placeholder{
+        color: $color-light-coral;
+    }
+
+    &:active{
+        border-bottom: 1px solid $color-light-coral;
+    }
+}
+
+.form__massage{
+    resize: none;
+}
+
+.form-submit-btn {
+    border: none;
+    padding: 10px 32px;
+    border-radius: 50px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    color: $color-deep-jungle-green;
+}

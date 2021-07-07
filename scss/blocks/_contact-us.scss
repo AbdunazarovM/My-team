@@ -1,0 +1,15 @@
+.contact-us-main{
+    padding-top: 30px;
+    padding-bottom: 120px;
+    background-image: url("../../imges/main-bottom-right-bg.png"),
+                    url("../../imges/contact-us-main-footer-bg.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% - 680px) calc(50% - 150px),
+                         calc(50% + 680px) bottom;
+}
+
+.main__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
